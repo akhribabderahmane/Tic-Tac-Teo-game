@@ -1,0 +1,76 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/* font-family: 'Carrois Gothic', sans-serif; */
+
+}
+.gameBoard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Architects Daughter', cursive;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    background-color: black;
+    gap: 2px;
+}
+.cell {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: transparent;
+    transition: 0.2s;
+  }
+  .cell:hover{
+    color: rgba(186, 175, 175, 0.368);
+  }
+  .winning-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    font-family: 'Carrois Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+ }
+#restart-btn{
+  background: none;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  width: 170px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  font-family: 'Carrois Gothic', sans-serif;
+  transition: 0.5s;
+}
+#restart-btn:hover{
+  transform: scale(1.1);
+}
+ .hidden {
+    display: none;
+   
+ }
+
+ 
+
+  
+  
